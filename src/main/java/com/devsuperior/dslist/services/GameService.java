@@ -25,6 +25,7 @@ public class GameService {
 		return dto;
 	}
 	
+	@org.springframework.transaction.annotation.Transactional(readOnly = true)
 	public List<GameMinDTO> findAll(){
 		List<Game> result = gameRepository.findAll();
 		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList();
