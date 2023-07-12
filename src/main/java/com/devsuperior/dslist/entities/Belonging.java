@@ -2,7 +2,7 @@ package com.devsuperior.dslist.entities;
 
 import java.util.Objects;
 
-import com.devsuperior.dslist.GameMinDTO;
+import com.devsuperior.dslist.dto.GameMinDTO;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
